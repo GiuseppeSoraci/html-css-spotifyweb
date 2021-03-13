@@ -16,21 +16,21 @@ ul {
 
 a {
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
     color: inherit;
 }
 
-a:hover {
+h1, 
+h2, 
+h3, 
+h4 {
     color: #fff;
+    font-weight: 600;
 }
 
 /* UTILITIES */
 .flex {
     display:flex;
-}
-
-.white-color {
-    color: #fff;
 }
 
 /* MAIN CONTENT */
@@ -61,6 +61,20 @@ a:hover {
     color: #fff;
 }
 
+.sidebar li {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sidebar ul li {
+    opacity: 0.5;
+}
+
+.sidebar ul li:hover {
+    opacity: 1;
+}
+
 /* Sidebar Top */
 .sidebar-top .logo {
     padding-bottom: 30px;
@@ -73,33 +87,36 @@ a:hover {
     max-width: 30px;
 }
 
-.sidebar-nav ul li:not(:first-child) {
-    opacity: 0.5;
-}
-
-.sidebar-nav ul li:hover {
-    opacity: 1;
-}
-
-.sidebar-nav li {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
 .sidebar-nav li a {
-    margin-left: 10px;
-    font-size: 18px;
+    margin-left: 5px;
+}
+
+.sidebar-nav ul li:first-child {
+    opacity: 1;
 }
 
 /* Playlist */
 
+.playlist h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
 
+.playlist i{
+    padding: 10px;   
+    margin-right: 10px; 
+    font-size: 20px;
+    background: #fff;
+    color: #000;
+}
 
+.playlist li a {
+    margin-top: 10px;
+}
 
 /* Sidebar Bottom */
 .sidebar-bottom {
-    padding-top:260px;
+    padding-top:26px;
 }
 
 /* GALLERY */
@@ -123,12 +140,9 @@ a:hover {
     background: transparent;
     border-radius: 100px;
     transition: .3s;
+    font-weight: 600;
     text-transform: uppercase;
     color: #fff;
-}
-
-.header-gallery .upgrade-btn a{
-    padding-top: 2px;
 }
 
 .header-gallery .upgrade-btn:hover {
