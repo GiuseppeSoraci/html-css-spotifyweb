@@ -16,11 +16,21 @@ ul {
 
 a {
     text-decoration: none;
+    font-weight: 700;
+    color: inherit;
+}
+
+a:hover {
+    color: #fff;
 }
 
 /* UTILITIES */
 .flex {
     display:flex;
+}
+
+.white-color {
+    color: #fff;
 }
 
 /* MAIN CONTENT */
@@ -48,6 +58,7 @@ a {
 /* SIDEBAR */
 .sidebar {
     padding: 18px;
+    color: #fff;
 }
 
 /* Sidebar Top */
@@ -56,6 +67,35 @@ a {
     margin-right: 30px;
     width: 150px;
 }
+
+/* Navbar */
+.sidebar-nav img {
+    max-width: 30px;
+}
+
+.sidebar-nav ul li:not(:first-child) {
+    opacity: 0.5;
+}
+
+.sidebar-nav ul li:hover {
+    opacity: 1;
+}
+
+.sidebar-nav li {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sidebar-nav li a {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+/* Playlist */
+
+
+
 
 /* Sidebar Bottom */
 .sidebar-bottom {
@@ -84,12 +124,11 @@ a {
     border-radius: 100px;
     transition: .3s;
     text-transform: uppercase;
+    color: #fff;
 }
 
 .header-gallery .upgrade-btn a{
     padding-top: 2px;
-    font-weight: 700;
-    color: #fff;
 }
 
 .header-gallery .upgrade-btn:hover {
