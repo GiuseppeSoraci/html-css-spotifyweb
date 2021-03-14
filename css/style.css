@@ -267,6 +267,21 @@ h4 {
     justify-content: space-between;
 }
 
+/* Second Gallery */
+.second-gallery {
+    padding-bottom: 50px;
+}
+
+/* Third Gallery */
+.third-gallery {
+    padding-bottom: 50px;
+}
+
+.third-gallery img {
+    border-radius: 50%;
+    height: 220px;
+} 
+
 /* FOOTER */
 .app-footer {
     height: 80px;
