@@ -8,7 +8,7 @@
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 14px;
-    overflow-y: hidden;
+    
 }
 
 ul {
@@ -42,8 +42,8 @@ h4 {
 .app-content{
     justify-content: center;
     height:100%;
-    overflow-y: auto;
 }
+
 
 .main-content .sidebar-col {
     width: 250px;
@@ -56,12 +56,14 @@ h4 {
     position: relative;
     flex-grow: 1;
     background: #161e27;
+    overflow-y: auto;
 }
 
 /* SIDEBAR */
 .sidebar {
     padding: 18px;
     color: #fff;
+    overflow-y: auto;
 }
 
 .sidebar li {
@@ -191,7 +193,7 @@ h4 {
 }
 
 .header-gallery .upgrade-btn:hover {
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
 
 /* FOOTER */
@@ -201,3 +203,171 @@ h4 {
     align-items: center;
     background: #060606db;
 }
+
+/* Footer Left */
+
+.footer-left img{
+    width:40px;
+    height: 40px;
+}
+
+.footer-left{
+    padding-left: 10px;
+    align-items:center;
+}
+
+.song-name{
+    padding-left: 10px;
+}
+
+.song-name span {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.footer-left .far {
+    color: #fff;
+    opacity: 0.4;
+}
+
+.footer-left .far:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.fa-heart{
+    font-size:15px;
+    padding-left:40px;
+}
+
+.fa-folder{
+    font-size:15px;
+    padding-left:15px;
+}
+
+/* Footer-Center */
+.footer-center{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-center .footer-icons{
+    align-items: center;
+}
+
+.footer-center i{
+    padding: 10px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.footer-center i:hover {
+    opacity: 1;
+}
+
+.fa-play-circle{
+    margin: 0 10px;
+    font-size: 2rem;
+    transition: .1s;
+}
+
+.fa-play-circle:hover {
+    transform: scale(1.1);
+}
+
+.footer-center .time-bar{
+   align-items: center;
+}
+
+
+.footer-center .time-bar .bar {
+    width:500px;
+    height: 5px;
+    margin: 0 25px;
+    border-radius: 15px;
+    background: #5a5a5a;   
+}
+
+.footer-center .time-bar .on-bar{
+    align-items: center;
+    justify-content: flex-end;
+    width: 100px;
+    height: 5px;
+    border-radius:15px;
+    background: #c1c1c1;
+}
+
+.on-bar .fa-circle {
+    padding: 0;
+    opacity: 0;
+    transition: .2s;
+}
+
+.on-bar:hover {
+    opacity: 1;
+}
+
+.footer-center .time-bar .on-bar:hover {
+    background: #12813a;
+}
+
+/* Footer Right */
+
+.footer-right{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.footer-right i{
+    padding: 10px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.footer-right i:hover {
+    opacity: 1;
+}
+
+.footer-right .volume-bar{
+   align-items: center;
+}
+
+
+.footer-right .volume-bar {
+    width: 130px;
+    height: 5px;
+    margin: 0 25px; 
+    border-radius: 15px;
+    background: #5a5a5a;   
+}
+
+.footer-right .volume-on-bar{
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 5px;
+    border-radius:15px;
+    background: #c1c1c1;
+}
+
+.volume-on-bar .fa-circle {
+    padding: 0;
+    opacity: 0;
+    transition: .2s;
+}
+
+.volume-on-bar:hover {
+    opacity: 1;
+}
+
+.footer-right .volume-on-bar:hover {
+    background: #12813a;
+}
+
+
+    
+    
