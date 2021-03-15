@@ -34,10 +34,18 @@ h4 {
     display:flex;
 }
 
+.opacity {
+    opacity: 0.5;
+}
+
+.opacity:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 /* Animation Img */
 
 .hover-img {
-    background-color: #000;
     color: #fff;
     display: inline-block;
     overflow: hidden;
@@ -107,6 +115,7 @@ figcaption .fa-play-circle {
   
 .hover-img:hover figcaption {
     opacity: 1;
+    cursor: pointer;
 }
 
 /* MAIN CONTENT */
@@ -137,20 +146,13 @@ figcaption .fa-play-circle {
     color: #fff;
     overflow-y: auto;
     height: 100%;
+    font-size: 12px;
 }
 
 .sidebar li {
     display: flex;
     align-items: center;
     margin-top: 10px;
-}
-
-.sidebar ul li {
-    opacity: 0.5;
-}
-
-.sidebar ul li:hover {
-    opacity: 1;
 }
 
 /* Sidebar Top */
@@ -171,7 +173,6 @@ figcaption .fa-play-circle {
 
 .sidebar-nav li a {
     margin-left: 5px;
-    font-size: 12px;
 }
 
 .sidebar-nav ul li:first-child {
@@ -198,7 +199,6 @@ figcaption .fa-play-circle {
 
 .playlist li a {
     margin-top: 5px;
-    font-size: 12px;
 }
 
 /* Sidebar Bottom */
@@ -209,16 +209,9 @@ figcaption .fa-play-circle {
 .sidebar-bottom .download{
     padding-bottom: 4px;
     margin-left: 4px;
-    opacity: 0.5;
-    font-size: 12px;
-}
-
-.sidebar-bottom .download:hover {
-    opacity: 1;
 }
 
 .download .fa-arrow-alt-circle-down {
-    font-size: 12px;
     margin-right: 5px;
 }
 
@@ -228,7 +221,6 @@ figcaption .fa-play-circle {
 }
 
 .profile span {
-    font-size: 12px;
     font-weight: 600;
 }
 
@@ -241,7 +233,6 @@ figcaption .fa-play-circle {
 }
 
 .sidebar-bottom hr {
-    opacity: 0.5;
     margin-top: 5px;
 }
 
@@ -338,7 +329,7 @@ figcaption .fa-play-circle {
 }
 
 .content-category {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .album-list {
@@ -354,7 +345,11 @@ figcaption .fa-play-circle {
     margin-top: 25px;
 }
 
-.third-gallery img {
+.album img{
+    width: 200px;
+}
+
+.content-category:nth-child(3) img {
     border-radius: 50%;
 }
 
@@ -367,7 +362,6 @@ figcaption .fa-play-circle {
 }
 
 /* Footer Left */
-
 .footer-left img{
     width:40px;
     height: 40px;
@@ -375,7 +369,7 @@ figcaption .fa-play-circle {
 
 .footer-left{
     padding-left: 10px;
-    align-items:center;
+    align-items: center;
 }
 
 .song-name{
@@ -384,21 +378,10 @@ figcaption .fa-play-circle {
 
 .song-name span {
     color: #fff;
-    opacity: 0.5;
-}
-
-.song-name span:hover {
-    opacity: 1;
 }
 
 .footer-left .far {
     color: #fff;
-    opacity: 0.4;
-}
-
-.footer-left .far:hover {
-    color: #fff;
-    opacity: 1;
 }
 
 .fa-heart{
@@ -426,11 +409,6 @@ figcaption .fa-play-circle {
 .footer-center i{
     padding: 10px;
     color: #fff;
-    opacity: 0.5;
-}
-
-.footer-center i:hover {
-    opacity: 1;
 }
 
 .fa-play-circle{
@@ -446,7 +424,6 @@ figcaption .fa-play-circle {
 .footer-center .time-bar{
    align-items: center;
 }
-
 
 .footer-center .time-bar .bar {
     width:500px;
@@ -474,17 +451,19 @@ figcaption .fa-play-circle {
     transition: .1s;
 }
 
-.on-bar-green:hover {
+.on-bar-green:hover,
+.volume-on-green:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
-.on-bar-green .fa-circle {
+.on-bar-green .fa-circle,
+.volume-on-green .fa-circle {
     padding: 0;
     opacity: 1;
 }
 
 /* Footer Right */
-
 .footer-right{
     flex-direction: row;
     align-items: center;
@@ -495,11 +474,6 @@ figcaption .fa-play-circle {
 .footer-right i{
     padding: 10px;
     color: #fff;
-    opacity: 0.5;
-}
-
-.footer-right i:hover {
-    opacity: 1;
 }
 
 .footer-right .volume-bar{
@@ -531,15 +505,6 @@ figcaption .fa-play-circle {
     background: #12813a;
     opacity: 0;
     transition: .1s;
-}
-
-.volume-on-green:hover {
-    opacity: 1;
-}
-
-.volume-on-green .fa-circle {
-    padding: 0;
-    opacity: 1;
 }
 
 
