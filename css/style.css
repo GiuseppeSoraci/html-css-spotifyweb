@@ -129,24 +129,24 @@ figcaption .fa-play-circle {
     overflow-y: auto;
 }
 
-.main-content .sidebar-col {
-    width: 230px;
-    background: #000;
-}
-
 .main-content .gallery {
     position: relative;
     flex-grow: 1;
     background: #161e27;
 }
 
+.sidebar,
+.gallery {
+    overflow-y: hidden;
+}
+
 /* SIDEBAR */
 .sidebar {
+    flex-basis: 230px;
     padding: 18px;
     color: #fff;
-    overflow-y: auto;
-    height: 100%;
     font-size: 12px;
+    background: #000;
 }
 
 .sidebar li {
@@ -158,12 +158,12 @@ figcaption .fa-play-circle {
 /* Sidebar Top */
 .sidebar-top {
     height: calc(100% - 50px);
+    min-height: 400px;
+    overflow: auto;
 }
 
 .sidebar-top .logo {
-    padding-bottom: 15px;
-    margin-right: 30px;
-    width: 150px;
+    width: 125px;
 }
 
 /* Navbar */
@@ -180,16 +180,16 @@ figcaption .fa-play-circle {
 }
 
 /* Playlist */
-.playlist {
+.sidebar-playlist {
     padding-top: 20px;
 }
 
-.playlist h2 {
+.sidebar-playlist h2 {
     text-transform: uppercase;
     font-size: 16px;
 }
 
-.playlist i{
+.sidebar-playlist i{
     padding: 5px;   
     margin-right: 10px; 
     font-size: 20px;
@@ -197,7 +197,7 @@ figcaption .fa-play-circle {
     color: #000;
 }
 
-.playlist li a {
+.sidebar-playlist li a {
     margin-top: 5px;
 }
 
@@ -241,7 +241,7 @@ figcaption .fa-play-circle {
 
 /* Gallery Top Bar */
 .gallery-top-bar {
-    height: 90px;
+    height: 80px;
     position: absolute;
     top: 0;
     width: 98.5%;   
@@ -354,7 +354,7 @@ figcaption .fa-play-circle {
 }
 
 /* FOOTER */
-.app-footer {
+footer {
     height: 80px;
     justify-content:space-between;
     align-items: center;
