@@ -43,6 +43,41 @@ h4 {
     cursor: pointer;
 }
 
+/* Animation Img */
+.content-gallery .album .cover {
+    position: relative;
+}
+
+.album .song .layover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.album .song .layover i {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.album .song:hover {
+    cursor: pointer;
+}
+
+.album .song:hover .layover {
+    opacity: 1;
+}
+
+.content-category:nth-child(3) .layover {
+    border-radius: 50%;
+} 
+
 /* MAIN CONTENT */
 .main-content {
     height: calc(100vh - 80px);
@@ -167,7 +202,6 @@ h4 {
     position: absolute;
     top: 0;
     width: 98.5%;   
-    z-index: 1;
     justify-content: flex-end;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
