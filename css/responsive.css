@@ -1,24 +1,224 @@
-/*******************
-RESPONSIVE
-*******************/
+/******************************
+RESPONSIVE - DESKTOP FIRST
+******************************/
 
 /* xs - 600 < */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
+    /* CONTENT */
+
+    /* Sidebar */
+    .main-content .sidebar {
+        width: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+            
+    }
+
+    .sidebar .logo,
+    .sidebar nav a,
+    .sidebar h4,
+    .sidebar .sidebar-playlist,
+    .sidebar .download span,
+    .sidebar-bottom hr,
+    .sidebar .profile span{
+        display: none;
+    }
+
+    .sidebar .logo-small{
+        display: block;
+        width: 100%;
+    }
+
+    /* Content Gallery */
+    .content-gallery {
+        padding-top: 20px;
+    }
+
+    .album-list {
+        padding-top: 15px;
+    }
+
+    .album-list .album {
+        width: calc(100% / 2 - 15px);
+    }
+
+    .content-category {
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+    .content-category h2 {
+        font-size: 20px;
+    }
+
+    .content-category p {
+        font-size: 15px;
+    }
+
+    .content-category span {
+        margin-top: 5px;
+    }
+
+    /* FOOTER */
+    .player {
+        font-size: 10px;
+    }
+
+    /* Player Left */
+    .player-left .song-name {
+        padding-right: 0;
+        font-size: 9px;
+    }
+
+    .playerleft-icons {
+        padding-left: 5px;
+        padding-right: 10px;
+        font-size: 9px;
+    }
+
+    .player-left .playerleft-icons i {
+        display: block;
+    }
+
+    .player-left img{
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Player Center */
+    .player-center {
+        padding-right: 7px;
+    }
+
+    .player-center .time-bar .bar {
+        width: 80px;
+    }   
+
+    .player-center .time-bar .bar {
+        margin: 0px 6px;
+    }
+
+    .player-center .time-bar .on-bar {
+        width: 30px;
+    }
+
+    .player-center .fa-play-circle { 
+        margin: 0 5px;
+        font-size: 1.2rem;
+        transition: .1s;
+    }
+
+    .player-center i{
+        padding: 5px;
+    }
+
+    /* Player Right */
+    .player-right i {
+        padding: 3px;
+    }
+
+    .player-right .volume-bar {
+        width: 50px;
+        margin: 0 5px 0 0;
+    }
+    
+    .player-right .volume-on-bar{
+        width: 20px;
+    }
+    
+    .volume-on-green {
+        width: 20px;
+    }
 }
 
 /* s - 601 > */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 601px) and (max-width: 767px) {
 
+    /* CONTENT */
+
+    /* Sidebar */
+    .main-content .sidebar {
+        width: 160px;        
+    }
+
+    .sidebar .logo,
+    .sidebar nav a,
+    .sidebar h4,
+    .sidebar .sidebar-playlist,
+    .sidebar-bottom hr {
+        display: block;
+    }
+
+    .sidebar .download span,
+    .sidebar .profile span {
+        display: inline;
+    }
+
+    .sidebar .logo-small{
+        display: none;
+    }
 }
 
-/* m - 768 > */
-@media screen and (min-width: 768px) {
+/* m - 768 to 1199 */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 
+    /* CONTENT */
+
+    /* Content Gallery */
+    .album-list .album {
+        width: calc(100% / 4 - 15px);
+    }
+    
+    /* FOOTER */
+    
+    /* Player Left */
+    .song-name {
+        padding-right: 10px;
+    }
+
+    .playerleft-icons {
+        padding-left: 5px;
+    }
+
+    .player-left .playerleft-icons i {
+        display: inline-block;
+    }
+
+    /* Player Center */
+    .player-center .time-bar .bar {
+        width: 230px;
+    }   
+
+    .player-center .time-bar .bar {
+        margin: 0px 10px;
+    }
+
+    .player-center .time-bar .on-bar{
+        width: 55px;
+    }
+    
+    .on-bar-green {
+        width: 55px;
+    }
+
+    /* Player Right */
+    .player-right i {
+        padding: 6px;
+    }
+
+    .player-right .volume-bar {
+        width: 80px;
+        margin: 0 10px;
+    }    
+
+    .player-right .volume-on-bar{
+        width: 25px;
+    }
+    
+    .volume-on-green {
+        width: 25px;
+    }
 }
-
-/* l - 1200 > */
-@media screen and (min-width: 1200px) {
-
-}
-
+    
