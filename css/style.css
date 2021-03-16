@@ -88,7 +88,7 @@ h4 {
     display: none;
 }
 
-/* Navbar */
+/* Sidebar Nav */
 .sidebar-nav img {
     max-width: 25px;
 }
@@ -101,7 +101,7 @@ h4 {
     opacity: 1;
 }
 
-/* Playlist */
+/*Sidebar Playlist */
 .sidebar-playlist {
     padding-top: 20px;
 }
@@ -189,7 +189,7 @@ h4 {
     transform: scale(1.1);
 }
 
-/* Nav Gallery */
+/* Gallery Menù */
 .gallery-menu {
     padding-top: 100px;
     color: #fff;

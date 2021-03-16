@@ -32,6 +32,26 @@ RESPONSIVE - DESKTOP FIRST
     }
 
     /* Content Gallery */
+    .main-content {
+        font-size: 10px;
+    }
+
+    /* Gallery Top Bar */
+    .gallery-top-bar {
+        height: 50px;
+    }
+
+    .gallery-top-bar .upgrade-btn {
+        font-size: 10px;
+        padding: 9px 18px;
+    }
+
+    /* Gallery Menù */
+    .gallery-menu {
+        padding-top: 85px;
+    }
+
+    /* Content Gallery */
     .content-gallery {
         padding-top: 20px;
     }
@@ -45,16 +65,16 @@ RESPONSIVE - DESKTOP FIRST
     }
 
     .content-category {
-        font-size: 10px;
         padding-bottom: 10px;
     }
 
     .content-category h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .content-category p {
-        font-size: 15px;
+        font-size: 12px;
+        margin-top: 3px;
     }
 
     .content-category span {
